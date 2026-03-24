@@ -218,7 +218,7 @@ export default function Home() {
 
       {/* Main */}
       <main className="flex-1">
-        <div className="max-w-xl mx-auto px-6 md:px-12">
+        <div className="max-w-lg mx-auto px-8 md:px-16 lg:px-0">
           {!showResults ? (
             <>
               {/* Hero */}

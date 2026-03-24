@@ -144,7 +144,7 @@ function InputField({
           value={value}
           onChange={(e) => onChange(name, e.target.value)}
           placeholder={placeholder}
-          className="w-full bg-transparent border-0 px-0 py-2 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0"
+          className="w-full bg-transparent border-0 px-0 py-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0"
         />
         {suffix && (
           <span className="text-sm text-gray-400 pl-1">{suffix}</span>
@@ -216,8 +216,8 @@ export default function Home() {
           {!showResults ? (
             <>
               {/* Hero */}
-              <div className="pt-24 pb-8 text-center">
-                <h1 className="text-3xl md:text-5xl font-light tracking-[0.08em] uppercase text-gray-900">
+              <div className="pt-16 md:pt-24 pb-8 text-center">
+                <h1 className="text-2xl md:text-5xl font-light tracking-[0.08em] uppercase text-gray-900">
                   When can you stop working?
                 </h1>
               </div>
@@ -282,17 +282,17 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="mt-16 flex gap-4">
+                <div className="mt-12 md:mt-16 flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <button
                     onClick={handleCalculate}
                     disabled={!results}
-                    className="px-8 py-3.5 bg-gray-900 text-white text-sm font-medium uppercase tracking-wide rounded-none hover:bg-gray-800 active:bg-black transition-colors duration-250 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto px-8 py-4 sm:py-3.5 bg-gray-900 text-white text-sm font-medium uppercase tracking-wide rounded-none hover:bg-gray-800 active:bg-black transition-colors duration-250 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     Calculate
                   </button>
                   <button
                     onClick={handleReset}
-                    className="px-8 py-3.5 border border-gray-300 text-gray-900 text-sm font-medium uppercase tracking-wide rounded-none hover:border-gray-900 active:bg-gray-50 transition-colors duration-250"
+                    className="w-full sm:w-auto px-8 py-4 sm:py-3.5 border border-gray-300 text-gray-900 text-sm font-medium uppercase tracking-wide rounded-none hover:border-gray-900 active:bg-gray-50 transition-colors duration-250"
                   >
                     Reset
                   </button>
@@ -303,18 +303,18 @@ export default function Home() {
             results && (
               <>
                 {/* Results */}
-                <div className="pt-24 pb-8">
+                <div className="pt-16 md:pt-24 pb-8 text-center">
                   <p className="text-xs font-medium uppercase tracking-[0.15em] text-gray-400 mb-6">
                     Your Results
                   </p>
                   {results.canRetireNow ? (
-                    <h1 className="text-5xl md:text-7xl font-light tracking-[0.08em] uppercase text-gray-900">
+                    <h1 className="text-4xl md:text-7xl font-light tracking-[0.08em] uppercase text-gray-900">
                       You Can
                       <br />
                       Retire Now
                     </h1>
                   ) : (
-                    <h1 className="text-5xl md:text-7xl font-light tracking-[0.08em] uppercase text-gray-900">
+                    <h1 className="text-4xl md:text-7xl font-light tracking-[0.08em] uppercase text-gray-900">
                       Age {results.retirementAge}
                     </h1>
                   )}
@@ -327,7 +327,7 @@ export default function Home() {
 
                 <div className="py-12">
                   <div className="space-y-0">
-                    <div className="flex items-center justify-between py-5 border-t border-gray-200">
+                    <div className="flex items-center justify-between py-5 border-t border-gray-200 gap-4">
                       <span className="text-xs font-medium uppercase tracking-[0.1em] text-gray-500">
                         Retirement Age
                       </span>
@@ -335,7 +335,7 @@ export default function Home() {
                         {results.retirementAge}
                       </span>
                     </div>
-                    <div className="flex items-center justify-between py-5 border-t border-gray-200">
+                    <div className="flex items-center justify-between py-5 border-t border-gray-200 gap-4">
                       <span className="text-xs font-medium uppercase tracking-[0.1em] text-gray-500">
                         Years to Go
                       </span>
@@ -343,7 +343,7 @@ export default function Home() {
                         {results.yearsUntilRetirement}
                       </span>
                     </div>
-                    <div className="flex items-center justify-between py-5 border-t border-gray-200">
+                    <div className="flex items-center justify-between py-5 border-t border-gray-200 gap-4">
                       <span className="text-xs font-medium uppercase tracking-[0.1em] text-gray-500">
                         Savings at Retirement
                       </span>
@@ -351,7 +351,7 @@ export default function Home() {
                         {formatCurrency(results.totalSavingsAtRetirement)}
                       </span>
                     </div>
-                    <div className="flex items-center justify-between py-5 border-t border-gray-200 border-b">
+                    <div className="flex items-center justify-between py-5 border-t border-gray-200 border-b gap-4">
                       <span className="text-xs font-medium uppercase tracking-[0.1em] text-gray-500">
                         Monthly Income in Retirement
                       </span>
@@ -368,10 +368,10 @@ export default function Home() {
                     advice.
                   </p>
 
-                  <div className="mt-16">
+                  <div className="mt-12 md:mt-16">
                     <button
                       onClick={handleReset}
-                      className="px-8 py-3.5 border border-gray-300 text-gray-900 text-sm font-medium uppercase tracking-wide rounded-none hover:border-gray-900 active:bg-gray-50 transition-colors duration-250"
+                      className="w-full sm:w-auto px-8 py-4 sm:py-3.5 border border-gray-300 text-gray-900 text-sm font-medium uppercase tracking-wide rounded-none hover:border-gray-900 active:bg-gray-50 transition-colors duration-250"
                     >
                       Start Over
                     </button>

@@ -218,7 +218,7 @@ export default function Home() {
 
       {/* Main */}
       <main className="flex-1">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-16">
+        <div className="max-w-xl mx-auto px-6 md:px-12">
           {!showResults ? (
             <>
               {/* Hero */}
@@ -228,14 +228,14 @@ export default function Home() {
                   <br />
                   I Retire?
                 </h1>
-                <p className="mt-6 text-sm text-gray-500 max-w-md">
+                <p className="mt-6 text-sm text-gray-500">
                   Answer a few questions about your finances and we&apos;ll
                   estimate when you can stop working.
                 </p>
               </div>
 
               {/* Form */}
-              <div className="max-w-lg py-12">
+              <div className="py-12">
                 <div className="space-y-8">
                   <InputField
                     label="Current Age"
@@ -337,7 +337,7 @@ export default function Home() {
                   )}
                 </div>
 
-                <div className="max-w-lg py-12">
+                <div className="py-12">
                   <div className="space-y-0">
                     <div className="flex items-center justify-between py-5 border-t border-gray-200">
                       <span className="text-xs font-medium uppercase tracking-[0.1em] text-gray-500">

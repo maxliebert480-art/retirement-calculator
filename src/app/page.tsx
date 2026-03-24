@@ -206,13 +206,7 @@ export default function Home() {
     <>
       {/* Navbar */}
       <nav className="sticky top-0 z-50 h-16 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-16 h-full flex items-center justify-between">
-          <span className="text-lg font-semibold tracking-[0.15em] uppercase text-gray-900">
-            Retire
-          </span>
-          <span className="text-xs font-medium tracking-[0.1em] uppercase text-gray-400">
-            Calculator
-          </span>
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-16 h-full flex items-center justify-center">
         </div>
       </nav>
 
@@ -224,9 +218,11 @@ export default function Home() {
               {/* Hero */}
               <div className="pt-24 pb-8">
                 <h1 className="text-5xl md:text-7xl font-light tracking-[0.08em] uppercase text-gray-900">
-                  When Can
+                  Kurt&apos;s
                   <br />
-                  I Retire?
+                  Retirement
+                  <br />
+                  Calculator
                 </h1>
                 <p className="mt-6 text-sm text-gray-500">
                   Answer a few questions about your finances and we&apos;ll

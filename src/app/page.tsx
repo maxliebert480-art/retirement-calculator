@@ -216,7 +216,7 @@ export default function Home() {
           {!showResults ? (
             <>
               {/* Hero */}
-              <div className="pt-24 pb-8">
+              <div className="pt-24 pb-8 text-center">
                 <h1 className="text-3xl md:text-5xl font-light tracking-[0.08em] uppercase text-gray-900 whitespace-nowrap">
                   Kurt&apos;s Retirement Calculator
                 </h1>

@@ -217,12 +217,8 @@ export default function Home() {
             <>
               {/* Hero */}
               <div className="pt-24 pb-8">
-                <h1 className="text-5xl md:text-7xl font-light tracking-[0.08em] uppercase text-gray-900">
-                  Kurt&apos;s
-                  <br />
-                  Retirement
-                  <br />
-                  Calculator
+                <h1 className="text-3xl md:text-5xl font-light tracking-[0.08em] uppercase text-gray-900 whitespace-nowrap">
+                  Kurt&apos;s Retirement Calculator
                 </h1>
                 <p className="mt-6 text-sm text-gray-500">
                   Answer a few questions about your finances and we&apos;ll

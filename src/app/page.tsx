@@ -217,8 +217,8 @@ export default function Home() {
       </nav>
 
       {/* Main */}
-      <main className="flex-1">
-        <div className="max-w-lg mx-auto px-8 md:px-16 lg:px-0">
+      <main className="flex-1 flex justify-center">
+        <div className="w-full max-w-md px-6">
           {!showResults ? (
             <>
               {/* Hero */}
